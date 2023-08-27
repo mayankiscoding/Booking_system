@@ -1,0 +1,105 @@
+<%- include("partials/header.ejs") %>
+
+<div class="former">
+<form action="/show/stat" method="post" class="showForm">
+    <h1>BOOKINGS BASED ON STATUS</h1>
+
+    <div class="form-group col-md-6 StatDiv">
+      <h4>STATUS</h4>
+      <div class="form-check form-check-inline">
+        <input type="radio" name="status" id="unbook" value="Not Booked">
+        <label for="unbook">FREE</label>
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input type="radio" name="status" id="book" value="booked">
+        <label for="book">BOOKED</label>
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input type="radio" name="status" id="all" value="*">
+        <label for="all">ALL</label>
+      </div>
+    </div>
+    
+    <div class="form-group col-md-7 DayDiv">
+      <h4>DAY</h4>
+
+      <div class="form-check form-check-inline">
+        <input type="radio" name="day" id="Mon" value="Mon">
+        <label for="Mon">Mon</label>
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input type="radio" name="day" id="Tues" value="Tues">
+        <label for="Tues">Tues</label>
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input type="radio" name="day" id="Wed" value="Wed">
+        <label for="Wed">Wed</label>
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input type="radio" name="day" id="Thurs" value="Thurs">
+        <label for="Thurs">Thurs</label>
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input type="radio" name="day" id="Fri" value="Fri">
+        <label for="Fri">Fri</label>
+      </div>
+      
+      <div class="form-check form-check-inline">
+        <input type="radio" name="day" id="Sat" value="Sat">
+        <label for="Sat">Sat</label>
+      </div>
+
+    </div>
+
+
+    
+    <button type="submit" class="btn btn-dark Srbtn">Search</button>
+
+  </form>
+  
+
+  <div class="StatBox">
+
+    <% if(locals.Result) {%>
+    <% for(var i=0 ; i< Result[0].length ; i++) { %>
+
+      <%const stat =  Result[0][i]["Status"] %>
+
+
+      <% if(stat === "Not Booked"){ %>
+        <% BoxClass = "NotBookedBox" %>
+        <div class=<%= BoxClass %>>
+
+          <h6><b>Class  </b><%=Result[0][i]["Room_No"] %></h6>
+          <h6><b class="Tslot">Slot  </b><%=Result[0][i]["Time_Slot"] %></h6>
+        </div>
+  
+        
+      <% }else{ %>
+        <% BoxClass = "BookedBox" %>
+        <div class=<%= BoxClass %>>
+
+          <h6><b>Class  </b><%=Result[0][i]["Room_No"] %></h6>
+          <h6><b>Course </b><%=Result[0][i]["Course"] %></h6>
+          <h6><b>Sem </b><%=Result[0][i]["Semester"] %></h6>
+          <h6><b>Subject  </b><%=Result[0][i]["Subject"] %></h6>
+          <h6><b class="Tslot">Slot  </b><%=Result[0][i]["Time_Slot"] %></h6>
+
+        </div>
+  
+      <% } %>
+      
+    <% } %>
+    <% } else {%>
+      <h1>Search</h1>  
+    <% } %> 
+  </div>
+</div>
+</body>
+</html>

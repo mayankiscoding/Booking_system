@@ -1,0 +1,218 @@
+/* LANDING PAGE */
+.intro {
+  height: 92.5vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.intro-slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: width: 100vw; */
+  height: 100%; /* relative to nearest positioned ancestor and not nearest block-level ancestor - alternatively: height: 100vh; */ 
+  object-fit: cover;
+  z-index:-1;
+  /* filter: brightness(50%); / / 0% black, 100% original image, values > 100% are allowed for brighter than original image. */
+  /* display: none; */
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+}
+.intro .intro-header {
+  border-radius: 0.5rem;
+  padding: 2rem 2.5rem;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.intro .intro-header img{
+  width: 45%;
+}
+.intro h1 {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+}
+.intro p {
+  font-size: 1.75rem;
+}
+
+
+.menu {
+  margin-left: 65vw;
+}
+.nav-head{
+  color: white;
+}
+.linkHead
+{
+  color: white;
+}
+.linkHead:hover
+{
+  color: white;
+}
+form
+{
+  height: 87vh;
+  width: 50vw;
+  margin-left: 25vw;
+  margin-top: 2vh;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(179, 179, 179);
+}
+input[type = "radio"]
+{
+  display: none;
+}
+
+
+input[type = "radio"]:checked + label
+{
+  transition: 0.1s;
+  outline-style: solid;
+  outline-color: black;
+  outline-width: 2px ;
+  outline-offset: 2px;
+}
+.date
+{
+  border-top: 1px solid black;
+  padding: 10px ;
+}
+
+.radios
+{
+  border-top: 1px solid gray;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.radios:nth-child(5)
+{
+  border-bottom: 1px solid gray;
+}
+.radios label
+{
+  height: 5%;
+  width: 10%;
+  font-size: larger;
+  padding-left: 5px;
+  align-items: center;
+}
+.times
+{
+  margin-bottom: 30px;
+  border-bottom: 1px solid gray;
+}
+.Tslot
+{
+  width: 35%;
+}
+.hall label
+{
+  width: 8vw;
+}
+/* SHOW STREAM CSS FOR SHOWING CLASSES */
+
+.former
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.showForm
+{
+  height: 100%;
+  border: none;
+  border: 1px solid black;
+  margin-left:1.5vw;
+  align-items: center;
+}
+.StatDiv,.DayDiv,.FlrDiv
+{
+  margin-top: 3vh;
+  width: 23vw;
+  padding:10px;
+  border-top: 1px solid black;
+
+}
+.container
+{
+  margin-top: 10px;
+}
+.ClassDrop label
+{
+  height: 100%;
+  width: 100%;
+}
+.slot label
+{
+  background-color: rgba(238, 233, 233, 0.445);
+  width: 8vw;
+}
+.dateDS b
+{
+  width: 40%;
+}
+.FlrDiv
+{
+  display: grid;
+}
+.DayDiv
+{
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+.Srbtn
+{
+  font-size: 1.5rem;
+}
+.showForm label 
+{
+  background-color: rgba(128, 128, 128, 0.236);
+  height: 6vh;
+  width: 5vw;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  justify-content: center;
+}
+.StatBox{
+  border: 1px solid gray;
+  height: 190vh;
+  border-radius: 10px;
+  margin-left: 1.5vw;
+  margin-top: 2vh;
+  display: grid;
+  gap: 5px;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 20px;
+}
+.BookedBox,.NotBookedBox
+{
+  height: 170px;
+  width: 160px;
+  border: 1px solid black;
+  display: flex;
+  padding: 15px;
+  gap: 0px;
+  flex-direction: column;
+}
+b
+{ 
+  display: inline-block;
+  width: 50%;
+}
+.BookedBox
+{
+  background-color: rgba(255, 0, 0, 0.175);
+}
+.NotBookedBox
+{
+  background-color: rgba(0, 128, 0, 0.419);
+}
+
+

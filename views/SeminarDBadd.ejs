@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs") %>
+
+  
+  <form action="/seminar/data/add" method="post" class="form-group">
+  <h1>ADD SEMINAR HALL SLOT</h1> 
+
+  <div class="radios hall">
+    <h5>Halls</h5>
+
+    <input type="radio" name="room" id="audi" value="Auditorium">
+    <label for="audi">Auditorium</label>
+
+    <input type="radio" name="room" id="404" value="404">
+    <label for="404">404</label>
+
+    <input type="radio" name="room" id="504" value="504">
+    <label for="504">504</label>
+
+  </div>
+
+    <div class="times form-row date">
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" class="form-control" name="date" id="date">
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-secondary btn-lg btn-dark">Book</button>
+  </form>
+
+</body>
+</html>

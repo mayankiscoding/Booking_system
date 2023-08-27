@@ -1,0 +1,263 @@
+<%- include("partials/header.ejs") %>
+<body>
+
+  <form action="/class/del" method="post" class="form-group">
+    <h1>UNBOOK A ROOM</h1> 
+    
+    <div class="radios">
+      <h5>Day</h5>
+
+      <input type="radio" name="day" id="Mon" value="Mon">
+      <label for="Mon">Mon</label>
+
+      <input type="radio" name="day" id="Tues" value="Tues">
+      <label for="Tues">Tues</label>
+
+      <input type="radio" name="day" id="Wed" value="Wed">
+      <label for="Wed">Wed</label>
+
+      <input type="radio" name="day" id="Thurs" value="Thurs">
+      <label for="Thurs">Thurs</label>
+
+      <input type="radio" name="day" id="Fri" value="Fri">
+      <label for="Fri">Fri</label>
+
+    </div>
+    
+    <div class="form-row">
+
+      <h5>ROOM</h5>
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-sm">
+              <!-- FIRSTFLOOR -->
+              
+              <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  First Floor
+                </a>
+              
+                <div class="dropdown-menu ClassDrop" aria-labelledby="dropdownMenuLink">
+                  <input type="radio" name="class" id="f01" value="101" class="dropdown-item">
+                  <label for="f01">101</label>
+                  
+                  <input type="radio" name="class" id="f02" value="102" class="dropdown-item">
+                  <label for="f02">102</label>
+                  
+                  <input type="radio" name="class" id="f03" value="103" class="dropdown-item">
+                  <label for="f03">103</label>
+                  
+                  <input type="radio" name="class" id="f04" value="104" class="dropdown-item">
+                  <label for="f04">104</label>
+                  
+                  <input type="radio" name="class" id="f05" value="105" class="dropdown-item">
+                  <label for="f05">105</label>
+                  
+                  <input type="radio" name="class" id="f06" value="106" class="dropdown-item">
+                  <label for="f06">106</label>
+  
+                </div>
+              </div>
+              <!-- FIRSTFLOOR ENDS  -->
+            </div>
+  
+            <div class="col-sm">
+            <!-- SECONDFLOOR -->
+              
+              <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Second Floor
+                </a>
+              
+                <div class="dropdown-menu ClassDrop" aria-labelledby="dropdownMenuLink">
+                  <input type="radio" name="class" id="s01" value="201" class="dropdown-item">
+                  <label for="s01">201</label>
+                  
+                  <input type="radio" name="class" id="s02" value="202" class="dropdown-item">
+                  <label for="s02">202</label>
+                  
+                  <input type="radio" name="class" id="s03" value="203" class="dropdown-item">
+                  <label for="s03">203</label>
+                  
+                  <input type="radio" name="class" id="s04" value="204" class="dropdown-item">
+                  <label for="s04">204</label>
+                  
+                  <input type="radio" name="class" id="s05" value="205" class="dropdown-item">
+                  <label for="s05">205</label>
+                  
+                  <input type="radio" name="class" id="s06" value="206" class="dropdown-item">
+                  <label for="s06">206</label>
+  
+                  <input type="radio" name="class" id="s07" value="207" class="dropdown-item">
+                  <label for="s07">207</label>
+  
+                </div>
+              </div>
+              <!-- SECONDFLOOR ENDS  -->
+            </div>
+  
+            <div class="col-sm">
+              <!-- THIRDFLOOR -->
+    
+              <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Third Floor
+                </a>
+              
+                <div class="dropdown-menu ClassDrop" aria-labelledby="dropdownMenuLink">
+                  <input type="radio" name="class" id="t01" value="301" class="dropdown-item">
+                  <label for="t01">301</label>
+                  
+                  <input type="radio" name="class" id="t02" value="302" class="dropdown-item">
+                  <label for="t02">302</label>
+                  
+                  <input type="radio" name="class" id="t03" value="303" class="dropdown-item">
+                  <label for="t03">303</label>
+                  
+                  <input type="radio" name="class" id="t04" value="304" class="dropdown-item">
+                  <label for="t04">304</label>
+                  
+                  <input type="radio" name="class" id="t05" value="305" class="dropdown-item">
+                  <label for="t05">305</label>
+                </div>
+                </div>
+                <!-- THIRDFLOOR ENDS  -->
+            </div>
+  
+          </div>
+        </div>
+  
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-sm">
+              <!-- FOURTHFLOOR -->
+              
+              <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Fourth Floor
+                </a>
+              
+                <div class="dropdown-menu ClassDrop" aria-labelledby="dropdownMenuLink">
+                  <input type="radio" name="class" id="f401" value="401" class="dropdown-item">
+                  <label for="f401">401</label>
+                  
+                  <input type="radio" name="class" id="f403" value="403" class="dropdown-item">
+                  <label for="f403">403</label>
+                  
+                  <input type="radio" name="class" id="f405" value="405" class="dropdown-item">
+                  <label for="f405">405</label>
+                  
+                  <input type="radio" name="class" id="f406" value="406" class="dropdown-item">
+                  <label for="f406">406</label>
+  
+                  <input type="radio" name="class" id="f407" value="407" class="dropdown-item">
+                  <label for="f407">407</label>
+  
+                </div>
+              </div>
+              <!-- FOURTHFLOOR ENDS  -->
+            </div>
+  
+            <div class="col-sm">
+            <!-- FIFTH FLOOR -->
+              
+              <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Fifth Floor
+                </a>
+              
+                <div class="dropdown-menu ClassDrop" aria-labelledby="dropdownMenuLink">
+                  <input type="radio" name="class" id="f501" value="501" class="dropdown-item">
+                  <label for="f501">501</label>
+                  
+                  <input type="radio" name="class" id="f502" value="502" class="dropdown-item">
+                  <label for="f502">502</label>
+                  
+                  <input type="radio" name="class" id="f503" value="503" class="dropdown-item">
+                  <label for="f503">503</label>
+                  
+                  <input type="radio" name="class" id="f505" value="505" class="dropdown-item">
+                  <label for="f505">505</label>
+                  
+                  <input type="radio" name="class" id="f506" value="506" class="dropdown-item">
+                  <label for="f506">506</label>
+  
+                  <input type="radio" name="class" id="f507" value="507" class="dropdown-item">
+                  <label for="f507">507</label>
+  
+                </div>
+              </div>
+              <!-- FIFTHFLOOR ENDS  -->
+            </div>
+  
+            <div class="col-sm">
+              <!-- SIXTHFLOOR -->
+    
+              <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sixth Floor
+                </a>
+              
+                <div class="dropdown-menu ClassDrop" aria-labelledby="dropdownMenuLink">
+                  <input type="radio" name="class" id="s601" value="601" class="dropdown-item">
+                  <label for="s601">601</label>
+                  
+                  <input type="radio" name="class" id="s603" value="603" class="dropdown-item">
+                  <label for="s603">603</label>
+                  
+                  <input type="radio" name="class" id="s604" value="604" class="dropdown-item">
+                  <label for="s604">604</label>
+                  
+                  <input type="radio" name="class" id="s605" value="605" class="dropdown-item">
+                  <label for="s605">605</label>
+  
+                  <input type="radio" name="class" id="s606" value="606" class="dropdown-item">
+                  <label for="s606">606</label>
+                </div>
+                </div>
+                <!-- THIRDFLOOR ENDS  -->
+            </div>
+  
+          </div>
+        </div>
+        
+      </div>
+      
+      
+      <div class="times form-group">
+        <div class="radios slot">
+          <h5>TIME SLOT</h5>
+    
+          <input type="radio" name="slot" id="01" value="9:40 - 10:40">
+          <label for="01">9:40 - 10:40</label>
+  
+          <input type="radio" name="slot" id="02" value="10:40 - 11:40">
+          <label for="02">10:40 - 11:40</label>
+  
+          <input type="radio" name="slot" id="03" value="11:40 - 12:40">
+          <label for="03">11:40 - 12:40</label>
+  
+          <input type="radio" name="slot" id="04" value="12:40 - 01:40">
+          <label for="04">12:40 - 01:40</label>
+  
+          <input type="radio" name="slot" id="05" value="01:40 - 02:40">
+          <label for="05">01:40 - 02:40</label>
+  
+          <input type="radio" name="slot" id="06" value="02:40 - 03:40">
+          <label for="06">02:40 - 03:40</label>
+  
+          <input type="radio" name="slot" id="07" value="02:40 - 03:40">
+          <label for="07">02:40 - 03:40</label>
+    
+    
+        </div>
+      </div>
+  
+
+    <button type="submit" class="btn btn-secondary btn-lg btn-dark">UnBook</button>
+  </form>
+
+</body>
+</html>
